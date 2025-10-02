@@ -1,0 +1,56 @@
+/* Reset default spacing and set consistent box sizing */
+* {
+  margin: 0; /* removes default outer spacing */
+  padding: 0; /* removes default inner spacing */
+  box-sizing: border-box; /* includes border/padding in total width/height */
+}
+/* Heading style at the top of the app */
+.headingStyle {
+  font-size: 2rem; /* large heading text */
+  font-weight: 600; /* semi-bold */
+  text-align: center; /* centers the text */
+  padding: 20px; /* spacing around the heading */
+  color: #333; /* dark gray text color */
+}
+
+/* Card container with neumorphic effect */
+.card {
+  background: #e0e0e0; /* light gray background for soft UI */
+  border-radius: 20px; /* rounded corners */
+  box-shadow: 8px 8px 16px #bebebe, -8px -8px 16px #ffffff; /* soft light & dark shadows for depth */
+  padding: 24px; /* inner spacing */
+  margin: 20px auto; /* vertical spacing, centered horizontally */
+  max-width: 400px; /* limits card width */
+  width: 100%; /* takes full width up to max */
+  transition: box-shadow 0.3s ease; /* smooth shadow animation */
+}
+
+/* Slightly different shadow when hovering over the card */
+.card:hover {
+  box-shadow: 4px 4px 12px #b0b0b0, -4px -4px 12px #ffffff; /* softer shadows on hover */
+}
+
+/* Title text inside the card */
+.cardTitle {
+  font-size: 1.4rem; /* slightly larger than normal text */
+  font-weight: 600; /* semi-bold */
+  text-align: center; /* centers the title */
+  margin-bottom: 16px; /* space below the title */
+  color: #2c2c2e; /* dark gray */
+}
+
+/* Description text inside the card */
+.cardDesc {
+  font-size: 1rem; /* standard readable text size */
+  color: #4a4a4a; /* medium gray */
+  line-height: 1.6; /* space between lines */
+  text-align: justify; /* even edge alignment */
+  margin-bottom: 16px; /* space below description */
+}
+
+/* Footer text inside the card */
+.cardFooter {
+  font-size: 0.95rem; /* slightly smaller than normal text */
+  text-align: center; /* centers the text */
+  color: #6e6e73; /* light muted gray */
+}       

@@ -1,0 +1,14 @@
+/* faqCard -> each FAQ item */
+.faqCard {
+  margin: 1rem;                              /* Space around the card */
+  background-color: rgb(229, 231, 233);    /* Light gray background */
+  padding: 1rem;                             /* Inner spacing */
+  border-radius: 0.6rem;                     /* Rounded corners */
+  box-shadow: 0.1rem 0.1rem #2c2c2c;       /* Soft shadow */
+}
+
+/* faq-header -> top row (title + button) */
+.faq-header {
+  display: flex;                        /* Flexbox layout */
+  justify-content: space-between;       /* Space between elements */
+}

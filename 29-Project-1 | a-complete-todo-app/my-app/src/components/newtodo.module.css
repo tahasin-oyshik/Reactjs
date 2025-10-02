@@ -1,0 +1,42 @@
+.form {
+  width: 50%;                   /* Take half of the container width */
+  background-color: #333;     /* Dark gray background */
+  color: white;               /* White text color */
+  padding: 0.5rem;              /* Inner spacing */
+  border-radius: 0.6rem;        /* Rounded corners */
+  margin-bottom: 0.5rem;        /* Space below form */
+}
+
+.form-field {
+  margin: 1rem 0;               /* Vertical spacing between fields */
+  display: flex;                /* Flexbox for label + input */
+}
+.form-field label {
+  flex-basis: 20%;              /* Label takes up 20% width */
+}
+.form-field input {
+  flex-basis: 80%;           /* Input takes 80% width next to label */
+  border: none;              /* Remove default border */
+  border-radius: 0.6rem;     /* Rounded corners */
+  padding: 0.2rem;           /* Inner spacing for text */
+}
+.form-field textarea {
+  flex-basis: 80%;          /* Textarea takes 80% width next to label */
+  resize: none;             /* Disable manual resize */
+  border: none;             /* Remove default border */
+  border-radius: 0.6rem;    /* Rounded corners */
+  padding: 0.2rem;          /* Inner spacing for text */
+}
+
+.form button {
+  border: none;             /* Remove default button border */
+  border-radius: 0.6rem;    /* Rounded corners */
+  cursor: pointer;          /* Pointer cursor on hover */
+  display: block;           /* Make button a block element */
+  margin: 0 auto;           /* Center button horizontally */
+  width: 50%;               /* Button takes half of form width */
+}
+.form button:hover {
+  background-color: orange;   /* Change background to orange on hover */
+  color: white;               /* Change text color to white */
+}

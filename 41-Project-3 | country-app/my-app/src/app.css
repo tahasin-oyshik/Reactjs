@@ -1,0 +1,18 @@
+/* Style for all input fields */
+input {
+  padding: 0.6rem;         /* Inner spacing */
+  border-radius: 0.6rem;   /* Rounded corners */
+  width: 20rem;            /* Fixed width */
+  font-size: 1.2rem;       /* Input text size */
+}
+
+/* Input focus effect */
+input:focus {
+  background-color: bisque; /* Highlight input when active */
+}
+
+/* Main heading style */
+h1 {
+  text-align: center;   /* Center align heading */
+  font-size: 3rem;      /* Large heading size */
+}

@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #ffffff;
+  color: #1d1d1f;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  color: #1d1d1f;
+}
+
+.icon {
+  font-size: 28px;
+  color: black;
+  background-color: white;
+  /* margin: 0 12px 0 0;
+👉 Order is top → right → bottom → left. */
+  margin: 0 12px;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+.icon:hover {
+  color: red;
+  transform: scale(1.1);
+}

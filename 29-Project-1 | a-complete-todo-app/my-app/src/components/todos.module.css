@@ -1,0 +1,9 @@
+.todos {
+  width: 50%;                 /* Take half of the container's width */
+  background-color: #333;      /* Dark gray background */
+  color: white;                /* White text color */
+  padding: 0.5rem;            /* Inner spacing around content */
+  border-radius: 0.6rem;      /* Rounded corners */
+  overflow: auto;             /* Add scrollbars if content overflows */
+  height: 60vh;               /* show scrollbar only if needed */
+}

@@ -1,0 +1,10 @@
+.headingStyle{
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}   
+
+.largeText{
+    font-size: 3rem;
+}   

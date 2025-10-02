@@ -1,0 +1,8 @@
+.container {
+  display: flex;                 /* Enable flexbox layout */
+  flex-direction: column;          /* Arrange children vertically */
+  background-color: #444;        /* Dark gray background */
+  min-height: 100vh;             /* Full viewport height */
+  justify-content: center;       /* Center children vertically */
+  align-items: center;           /* Center children horizontally */
+}

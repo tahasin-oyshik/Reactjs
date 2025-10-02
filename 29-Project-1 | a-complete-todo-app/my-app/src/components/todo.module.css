@@ -1,0 +1,23 @@
+.todo {
+  background-color: #222;        /* Dark background for each todo item */
+  margin: 0.5rem;                  /* Space outside each todo */
+  border-radius: 0.6rem;           /* Rounded corners */
+  display: flex;                      /* Flex layout for content */
+  justify-content: space-between;     /* Spread content (title/desc vs. delete btn) */
+  align-items: center;             /* Align items vertically center */
+  padding: 0.5rem;                 /* Inner spacing */
+}
+.todo:hover {
+  background-color: #111;       /* Darker background on hover */
+}
+
+.todo p {
+  opacity: 0.6;                  /* Dimmed text (for description) */
+}
+
+.btn {
+  border: none;                   /* Remove default button border */
+  background-color: transparent;  /* No background, blends with parent */
+  color: red;                   /* Red text/icon color */
+  cursor: pointer;                /* Show hand pointer on hover */
+}

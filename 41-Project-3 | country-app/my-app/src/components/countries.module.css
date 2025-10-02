@@ -1,0 +1,20 @@
+/* Countries container */
+.countries {
+  padding: 3rem;      /* Inner spacing */
+  display: grid;      /* Use grid layout */
+  gap: 2rem;          /* Space between grid items */
+}
+
+/* Responsive grid for tablets (≥768px) */
+@media screen and (min-width: 768px) {
+  .countries {
+    grid-template-columns: auto auto; /* 2-column layout */
+  }
+}
+
+/* Responsive grid for desktops (≥992px) */
+@media screen and (min-width: 992px) {
+  .countries {
+    grid-template-columns: auto auto auto; /* 3-column layout */
+  }
+}

@@ -1,0 +1,37 @@
+/* Country card */
+.country {
+  background-color: #34495e;  /* Dark blue background */
+  color: white;               /* White text */
+  display: flex;              /* Flexbox layout */
+  justify-content: center;    /* Center horizontally */
+  flex-direction: column;     /* stack items vertically */
+  padding: 1rem;              /* Inner spacing */
+  align-items: center;        /* Center vertically */
+  border-radius: 0.6rem;      /* Rounded corners */
+  transition: all 0.3s;       /* Smooth hover animation */
+}
+/* Country card hover effect */
+.country:hover {
+  transform: scale(1.1);     /* Slightly enlarge on hover */
+}
+
+/* Flag inside country card */
+.flag {
+  width: 10rem;              /* Fixed width */
+  height: 7rem;              /* Fixed height */
+}
+
+/* Button base style */
+.btn {
+  border: none;               /* Remove default border */
+  border-radius: 0.6rem;      /* Rounded corners */
+  padding: 0.6rem;            /* Inner spacing */
+  cursor: pointer;            /* Pointer cursor on hover */
+  background-color: orange;   /* Orange background */
+  transition: all 0.3s;       /* Smooth hover effect */
+}
+/* Button hover effect */
+.btn:hover {
+  background-color: red;      /* Change background to red */
+  color: white;               /* Change text color to white */
+}
