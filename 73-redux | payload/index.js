@@ -9,9 +9,12 @@ import { legacy_createStore as createStore } from 'redux';
 const INCREMENT = 'INCREMENT';
 const DECREMENT = 'DECREMENT';
 const RESET = 'RESET';
+const INCREMENT_BY_VALUE = 'INCREMENT_BY_VALUE';
+const ADD_USER = 'ADD_USER';
 
 const initialState = {
-  count: 0,
+  count: 1,
+  users: ['Jones'],
 };
 
 const incrementCounterAction = () => {
@@ -29,9 +32,21 @@ const resetCounterAction = () => {
     type: RESET,
   };
 };
+const incrementCounterByValue = (value) => {
+  return {
+    type: INCREMENT_BY_VALUE,
+    payload: value,
+  };
+};
+const addUser = (user) => {
+  return {
+    type: ADD_USER,
+    payload: user,
+  };
+};
 
 // CREATING REDUCER
-const counterReducer = (state = initialState, action) => {
+const reducer = (state = initialState, action) => {
   switch (action.type) {
     case INCREMENT:
       return {
@@ -48,21 +63,35 @@ const counterReducer = (state = initialState, action) => {
         ...state,
         count: 0,
       };
+    case INCREMENT_BY_VALUE:
+      return {
+        ...state,
+        count: state.count + action.payload,
+      };
+    case ADD_USER:
+      return {
+        count: state.count + 1,
+        users: [...state.users, action.payload],
+      };
     default:
       return state;
   }
 };
 
 // store
-const store = createStore(counterReducer);
+const store = createStore(reducer);
 
 store.subscribe(() => {
   console.log(store.getState());
 });
 
-store.dispatch(incrementCounterAction());
-store.dispatch(incrementCounterAction());
-store.dispatch(incrementCounterAction());
-store.dispatch(decrementCounterAction());
-store.dispatch(resetCounterAction());
-store.dispatch(incrementCounterAction());
+// store.dispatch(incrementCounterAction());
+// store.dispatch(incrementCounterAction());
+// store.dispatch(incrementCounterAction());
+// store.dispatch(decrementCounterAction());
+// store.dispatch(resetCounterAction());
+// store.dispatch(incrementCounterAction());
+// store.dispatch(incrementCounterByValue(5));
+// store.dispatch(incrementCounterByValue(10));
+store.dispatch(addUser('Tahasin'));
+store.dispatch(addUser('DarkStar'));
