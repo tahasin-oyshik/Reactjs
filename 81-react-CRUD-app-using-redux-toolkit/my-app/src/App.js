@@ -1,9 +1,10 @@
 import './App.css';
+import Index from './routes';
 
 const App = () => {
   return (
     <div className="App">
-      <h1>REACT REDUX CRUD APP</h1>
+      <Index />
     </div>
   );
 };
